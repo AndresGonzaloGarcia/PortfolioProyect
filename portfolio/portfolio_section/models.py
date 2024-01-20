@@ -12,7 +12,7 @@ class Project(models.Model):
     updated_at= models.DateTimeField(auto_now= True) #cambia la fecha cada vez que se modifica el registro
     
     class Meta:
-        ordering = ['-created']
+        ordering = ['-created_at']
     
     def __str__(self):
         return self.title
