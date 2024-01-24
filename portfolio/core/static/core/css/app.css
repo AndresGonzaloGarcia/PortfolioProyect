@@ -2,19 +2,19 @@
 /* IMAGENES DE FONDO DE LAS PAGINAS */
 
 .home {
-    background-image: url(../core/img/inicio-bg.jpeg);
+    background-image: url(../img/inicio-bg.jpeg);
 }
 
 .about {
-    background-image: url(../core/img/about-bg2.jpeg);
+    background-image: url(../img/about-bg2.jpeg);
 }
 
 .portfolio {
-    background-image: url(../core/img/portfolio-bg.jpeg);
+    background-image: url(../img/portfolio-bg.jpeg);
 }
 
 .contact {
-    background-image: url(../core/img/contact-bg.png);
+    background-image: url(../img/contact-bg.png);
 }
 
 .imagen-fondo {
