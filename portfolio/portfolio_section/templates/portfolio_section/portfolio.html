@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 
-
 {% block title %} Portfolio {% endblock %}
 
 {% load static %}
@@ -24,9 +23,11 @@
     </div>
     
     <!-- CONTENIDO -->
+    
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 bg-light">
+        {% for project in projects %}
         <div class="container">
-            {% for project in projects %}
+            
             <!-- Proyecto -->
             <div class="row project mb-5">  	
                 <div class="col-lg-3 col-md-4 offset-lg-1">
@@ -39,9 +40,11 @@
                 <p><a href= {{ project.link }} >Más información</a></p>
                 {% endif %}
                 </div>
-            {% endfor %}
+            
             </div>
         </div>
+        {% endfor %}
     </div>
+    
 
 {% endblock %}
