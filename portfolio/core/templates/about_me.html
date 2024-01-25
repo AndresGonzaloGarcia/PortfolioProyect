@@ -3,6 +3,8 @@
 {% block title %} Sobre mi {% endblock %}
 
 
+
+
 {% block content %}
 
     {% load static %}
@@ -39,14 +41,16 @@
                     <h2 class="fw-bold">Conocimientos</h2>
                     <section class="skills" id="skills">
                         <div class="skills__container" id="skills">
-                            <div class="card__skills">
-                                <div class="skill__thumbnail">
-                                    <img class="skill__logo" src={% static '\core\img\skills\mysql-svgrepo-com.svg' %} alt="html5">
+                            {% for skill in skills %}
+                                <div class="card__skills">
+                                        <div class="skill__thumbnail">
+                                            <img class="skill__logo" src={{ skill.image.url }} alt="html5">
+                                        </div>
+                                        <div class="skill__texto">
+                                            <p class="skill__titulo">{{ skill.title }}</p>
+                                        </div>
                                 </div>
-                                <div class="skill__texto">
-                                    <p class="skill__titulo">MySQL</p>
-                                </div>
-                            </div>
+                            {% endfor %}
         
         
                         </div>
